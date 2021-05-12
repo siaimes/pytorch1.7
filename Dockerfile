@@ -1,6 +1,6 @@
 FROM pytorch/pytorch:1.7.1-cuda11.0-cudnn8-devel
 
-RUN conda install -y faiss-gpu -c pytorch
+# RUN conda install -y faiss-gpu -c pytorch # Not compatible with pytorch 1.7
 
 RUN conda install -y scikit-learn pandas
 
